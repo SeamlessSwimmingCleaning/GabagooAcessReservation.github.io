@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Gabagaoo Access Reservation</h1>
+
+<p>Date:</p>
+<input type="text" id="date" name="date">
+
+<p>Phone Number:</p>
+<div>
+        <input type="text" id="tbNum" onkeyup="addHyphen(this)"
+            placeholder="Enter Phone Number" maxLength="10"/>
+    </div>
+</body>
+
+<script>
+	function addHyphen (element) {
+    	let ele = document.getElementById(element.id);
+        ele = ele.value.split('-').join('');    // Remove dash (-) if mistakenly entered.
+
+        let finalVal = ele.replace(/(\d)(\d)(\d)(\d)(\d)(\d)(\d)(\d)(\d)(\d)/, '$1$2$3-$4$5$6-$7$8$9$10')
+        document.getElementById(element.id).value = finalVal;
+    }
+</script>
+
+<br />
+
+<p>(Or Email Address)</p>
+  <label for="Email">Enter your email address:</label><br><br>
+  <input type="tel" id="Email" name="Email" placeholder="YourName@gmail.com"
+  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+ 
+
+
+<h1>NAME--</h1>
+<p>First Name:</p>
+<input type="text" id="Name1" name="Name1">
+
+<p>Last Name:</p>
+<input type="text" id="Name2" name="Name2">
+
+<h1>ACCESS PLAN</h1>
+<p><b>Gabagoo Access Plan</b></p>
+
+<label for="Access-Plans">Choose a Access Plan:</label>
+<select name="Access-Plan" id="Access-Plan">     <option value="Bronze Plan">Bronze Plan ($15) </option>
+    <option value="Silver Plan">Silver Plan ($28) </option>
+    <option value="Gold Plan">Gold Plan ($34) </option>
+    <option value="Sapphire Plan">Sapphire Plan ($41) </option>
+</select>
+
+<h1>Suggestions</h1>
+<label for="Suggestions">Suggestions:</label>
+<textarea id="Suggestions" name="Suggestions"></textarea>
+
+<br />
+
+<img src="Logo.jpg" alt="Logo" width="600" height="600">
+
+<br />
+
+<h1>Gold Access Prizes</h1>
+
+<label for="Gold-Prizes"><b>Prize1:</b></label>
+<select name="Access-Plan" id="Access-Plan">     <option value="Makeup">Makeup</option>
+    <option value="GiftCard">GiftCard</option>
+    <option value="Skin Care">Skin Care</option>
+    <option value="Moisturizer">Moisturizer</option>
+    <option value="Soccerball">Soccerball</option>
+    <option value="baseball">baseball</option>
+    <option value="basketball">basketball</option>
+    <option value="30% off your next Gabagoo Access Purchase">30% off your next Gabagoo Access Purchase</option>
+</select>
+<br />
+<label for="Gold-Prizes"><b>Prize2:</b></label>
+<select name="Access-Plan" id="Access-Plan">     <option value="Makeup">Makeup</option>
+    <option value="GiftCard">GiftCard</option>
+    <option value="Skin Care">Skin Care</option>
+    <option value="Moisturizer">Moisturizer</option>
+    <option value="Soccerball">Soccerball</option>
+    <option value="baseball">baseball</option>
+    <option value="basketball">basketball</option>
+    <option value="30% off your next Gabagoo Access Purchase">30% off your next Gabagoo Access Purchase</option>
+</select>
+<br />
+<label for="Gold-Prizes"><b>Prize3:</b></label>
+<select name="Access-Plan" id="Access-Plan">     <option value="Makeup">Makeup</option>
+    <option value="GiftCard">GiftCard</option>
+    <option value="Skin Care">Skin Care</option>
+    <option value="Moisturizer">Moisturizer</option>
+    <option value="Soccerball">Soccerball</option>
+    <option value="baseball">baseball</option>
+    <option value="basketball">basketball</option>
+    <option value="30% off your next Gabagoo Access Purchase">30% off your next Gabagoo Access Purchase</option>
+</select>
+<br />
+<label for="Gold-Prizes"><b>Prize4:</b></label>
+<select name="Access-Plan" id="Access-Plan">     <option value="Makeup">Makeup</option>
+    <option value="GiftCard">GiftCard</option>
+    <option value="Skin Care">Skin Care</option>
+    <option value="Moisturizer">Moisturizer</option>
+    <option value="Soccerball">Soccerball</option>
+    <option value="baseball">baseball</option>
+    <option value="basketball">basketball</option>
+    <option value="30% off your next Gabagoo Access Purchase">30% off your next Gabagoo Access Purchase</option>
+</select>
+
+<br />
+<br />
+
+<h1>Sapphire Access Prizes</h1>
+
+<label for="Sapphire Prizes"><b>Prize1:</b></label>
+<select name="Access-Plan" id="Access-Plan">     <option value="Makeup">Makeup</option>
+    <option value="GiftCard">GiftCard</option>
+    <option value="Skin Care">Skin Care</option>
+    <option value="Moisturizer">Moisturizer</option>
+    <option value="Makeup">Makeup</option>   
+    <option value="Perfume">Perfume</option>
+    <option value="Exclusive Gabagoo Umbrella">Exclusive Gabagoo Umbrella</option>
+    <option value="Exclusive Gabagoo Purse">Exclusive Gabagoo Purse</option>
+    <option value="Soccerball">Soccerball</option>
+    <option value="baseball">baseball</option>
+    <option value="basketball">basketball</option>
+    <option value="45% off your next Gabagoo Access Purchase">30% off your next Gabagoo Access Purchase</option>
+</select>
+<br />
+<label for="Sapphire Prizes"><b>Prize2:</b></label>
+<select name="Access-Plan" id="Access-Plan">     <option value="Makeup">Makeup</option>
+    <option value="GiftCard">GiftCard</option>
+    <option value="Skin Care">Skin Care</option>
+    <option value="Moisturizer">Moisturizer</option>
+    <option value="Makeup">Makeup</option>
+    <option value="Perfume">Perfume</option>
+    <option value="Exclusive Gabagoo Umbrella">Exclusive Gabagoo Umbrella</option>
+    <option value="Exclusive Gabagoo Purse">Exclusive Gabagoo Purse</option>
+    <option value="Soccerball">Soccerball</option>
+    <option value="baseball">baseball</option>
+    <option value="basketball">basketball</option>
+    <option value="45% off your next Gabagoo Access Purchase">30% off your next Gabagoo Access Purchase</option>
+</select>
+<br />
+<label for="Sapphire Prizes"><b>Prize3:</b></label>
+<select name="Access-Plan" id="Access-Plan">     <option value="Makeup">Makeup</option>
+    <option value="GiftCard">GiftCard</option>
+    <option value="Skin Care">Skin Care</option>
+    <option value="Moisturizer">Moisturizer</option>
+    <option value="Makeup">Makeup</option>
+    <option value="Perfume">Perfume</option>
+    <option value="Exclusive Gabagoo Umbrella">Exclusive Gabagoo Umbrella</option>
+    <option value="Exclusive Gabagoo Purse">Exclusive Gabagoo Purse</option>
+    <option value="Soccerball">Soccerball</option>
+    <option value="baseball">baseball</option>
+    <option value="basketball">basketball</option>
+    <option value="45% off your next Gabagoo Access Purchase">30% off your next Gabagoo Access Purchase</option>
+</select>
+<br />
+<label for="Sapphire Prizes"><b>Prize4:</b></label>
+<select name="Access-Plan" id="Access-Plan">     <option value="Makeup">Makeup</option>
+    <option value="GiftCard">GiftCard</option>
+    <option value="Skin Care">Skin Care</option>
+    <option value="Moisturizer">Moisturizer</option>
+    <option value="Makeup">Makeup</option>
+    <option value="Perfume">Perfume</option>
+    <option value="Exclusive Gabagoo Umbrella">Exclusive Gabagoo Umbrella</option>
+    <option value="Exclusive Gabagoo Purse">Exclusive Gabagoo Purse</option>
+    <option value="Soccerball">Soccerball</option>
+    <option value="baseball">baseball</option>
+    <option value="basketball">basketball</option>
+    <option value="45% off your next Gabagoo Access Purchase">30% off your next Gabagoo Access Purchase</option>
+</select>
+<br />
+<label for="Sapphire Prizes"><b>Prize5:</b></label>
+<select name="Access-Plan" id="Access-Plan">     <option value="Makeup">Makeup</option>
+    <option value="GiftCard">GiftCard</option>
+    <option value="Skin Care">Skin Care</option>
+    <option value="Moisturizer">Moisturizer</option>
+    <option value="Makeup">Makeup</option>
+    <option value="Perfume">Perfume</option>
+    <option value="Exclusive Gabagoo Umbrella">Exclusive Gabagoo Umbrella</option>
+    <option value="Exclusive Gabagoo Purse">Exclusive Gabagoo Purse</option>
+    <option value="Soccerball">Soccerball</option>
+    <option value="baseball">baseball</option>
+    <option value="basketball">basketball</option>
+    <option value="45% off your next Gabagoo Access Purchase">30% off your next Gabagoo Access Purchase</option>
+</select>
+
+</html>
